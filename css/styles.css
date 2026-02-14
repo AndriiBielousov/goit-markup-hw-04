@@ -149,8 +149,7 @@ p {
 .header-menu-link:focus,
 .header-contacts-link:hover,
 .header-contacts-link:focus,
-.header-menu-link.current:hover,
-.header-menu-link.current:focus {
+.header-menu-link.current {
   color: #404bbf;
 }
 
