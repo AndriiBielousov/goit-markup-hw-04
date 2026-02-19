@@ -60,7 +60,7 @@ p {
     0 1px 6px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 2px 1px 0 rgba(46, 47, 66, 0.08);
-  width: 1440px;
+  /* width: 1440px; */
   margin: 0 auto;
 }
 
@@ -311,6 +311,18 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+
+.hero-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   background-color: #4d5ae5;
@@ -318,15 +330,12 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-team-icon-one:hover {
+.hero-icon-link:hover,
+.hero-icon-link:focus {
   background-color: #404bbf;
   cursor: pointer;
 }
-.icon-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .hero-team-contacts-item-svg {
   fill: #f4f4fd;
@@ -355,10 +364,14 @@ button {
 .portfolio-items {
   width: calc((100% - 48px) / 3);
   position: relative;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-items:hover .portfolio-items-hower-text {
-  transform: translateY(0);
+.portfolio-items:hover {
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-items-hower {
@@ -380,6 +393,10 @@ button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.portfolio-items:hover .portfolio-items-hower-text {
+  transform: translateY(0);
+}
+
 .portfolio-title-descr-d {
   padding: 32px 16px 32px 16px;
   border-left: 1px solid #e7e9fc;
@@ -390,12 +407,7 @@ button {
   height: 120px;
 }
 
-.portfolio-items:hover {
-  box-shadow:
-    0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16),
-    0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
+
 
 .portfolio-title {
   font-weight: 500;
@@ -420,8 +432,8 @@ button {
 .footer-container {
   display: flex;
   gap: 120px;
-  width: 1440px;
   margin: 0 auto;
+  align-items: baseline;
 }
 
 .footer-title {
@@ -459,6 +471,12 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   background-color: #4d5ae5;
@@ -466,7 +484,8 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-media-icon:hover {
+.footer-icon-link:hover,
+.footer-icon-link:focus {
   background-color: #31d0aa;
   cursor: pointer;
 }
